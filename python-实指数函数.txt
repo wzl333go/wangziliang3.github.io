@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from math import e
+x=np.arange(-1,1,0.01)
+
+y1= 2*e**(2*x)
+y2= 2*e**(-2*x)
+y3= 2*e**(0*x)
+
+plt.plot(x,y1,color = 'r')
+plt.plot(x,y2,color = 'b')
+plt.plot(x,y3,color = 'g')
+
+plt.xlabel("t",fontsize=14)
+plt.ylabel("x(t)",fontsize=14)
+
+plt.show()
