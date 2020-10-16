@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from math import pi
+from math import e
+
+x = np.linspace(-5,5,500)
+
+y= np.cos(12*x+pi/2)*2*e**x
+
+plt.plot(x,y,color = 'r')
+
+plt.xlabel("t",fontsize=14)
+plt.ylabel("x(t)",fontsize=14)
+
+plt.show()
